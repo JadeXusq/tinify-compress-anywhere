@@ -7,11 +7,27 @@
     "publish": "npm publish",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "bin": {
+    "tci": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JadeXusq/tinify-compress-anywhere"
+  },
+  "bugs": {
+    "url": "https://github.com/JadeXusq/tinify-compress-anywhere/issues"
+  },
+  "keywords": [
+    "image",
+    "compress images",
+    "tinify",
+    "tinypng"
+  ],
   "author": "JadeXu",
   "license": "ISC",
   "dependencies": {
     "cliui": "^8.0.1",
-    "colors": "^1.4.2",
+    "colors": "^1.4.0",
     "commander": "^9.5.0",
     "dayjs": "^1.11.7",
     "ora": "^6.1.2",
