@@ -1,5 +1,5 @@
 {
-  "name": "tca",
+  "name": "tci",
   "version": "1.0.0",
   "description": "tinify compress images anywhere",
   "main": "index.js",
