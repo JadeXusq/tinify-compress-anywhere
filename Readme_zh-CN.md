@@ -35,7 +35,6 @@ tci setKey apiKey
 
 ![设置key](./source/screenshot/1673603210950.jpg)
 
-
 ## 获取总数
 
 获取有关本月 API 密钥已优化多少图像的信息.
