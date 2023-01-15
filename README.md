@@ -13,7 +13,7 @@ compress image files from anywhere to anywhere with tinify plugin
 ## Installation
 
 ```sh
-npm install tci -g
+npm install tinify-compress-anywhere -g
 ```
 
 ## Check Version

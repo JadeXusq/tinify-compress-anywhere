@@ -13,7 +13,7 @@ Read this in other languages: [English](./README.md) | 简体中文
 ## 安装
 
 ```sh
-npm install tci -g
+npm install tinify-compress-anywhere -g
 ```
 
 ## 检查版本
