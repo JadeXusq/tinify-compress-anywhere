@@ -1,8 +1,8 @@
 # tinify-compress-anywhere
 
-[![NPM Version](http://img.shields.io/npm/v/tci.svg?style=flat)](https://www.npmjs.org/package/tci)
-[![NPM Downloads](https://img.shields.io/npm/dm/tci.svg?style=flat)](https://npmcharts.com/compare/tci?minimal=true)
-[![Install Size](https://packagephobia.now.sh/badge?p=tci)](https://packagephobia.now.sh/result?p=tci)
+[![NPM Version](http://img.shields.io/npm/v/tinify-compress-anywhere.svg?style=flat)](https://www.npmjs.org/package/tinify-compress-anywhere)
+[![NPM Downloads](https://img.shields.io/npm/dm/tinify-compress-anywhere.svg?style=flat)](https://npmcharts.com/compare/tinify-compress-anywhere?minimal=true)
+[![Install Size](https://packagephobia.now.sh/badge?p=tinify-compress-anywhere)](https://packagephobia.now.sh/result?p=tinify-compress-anywhere)
 
 Read this in other languages: [English](./README.md) | 简体中文
 
@@ -32,7 +32,7 @@ tci -V
 tci setKey apiKey
 ```
 
-![设置key](./source/screenshot/1673603210950.jpg)
+![设置key](./source/screenshot/setKey.jpg)
 
 ## 获取总数
 
@@ -42,7 +42,7 @@ tci setKey apiKey
 tci count
 ```
 
-![获取总数](./source/screenshot/1673603584706.jpg)
+![获取总数](./source/screenshot/getCount.jpg)
 
 ## 压缩图片
 
@@ -78,6 +78,6 @@ tci -s ./source -o ./source
 tci -s ./source -o ./source -c ./copy
 ```
 
-![压缩中](./source/screenshot/1673603740063.jpg)
+![压缩中](./source/screenshot/compressing.jpg)
 
-![压缩完成](./source/screenshot/1673603756317.jpg)
+![压缩完成](./source/screenshot/complete.jpg)

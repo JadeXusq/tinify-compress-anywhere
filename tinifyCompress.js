@@ -90,7 +90,7 @@ class TinifyCompress {
    */
   copy(sourcePath) {
     if (this.copyDirName) {
-      const copyPth = path.join(__dirname, `${this.copyDirName}/${this.copyTime}/${sourcePath.replace(path.join(this.sourceDirName), '')}`)
+      const copyPth = path.join(`${this.copyDirName}/${this.copyTime}/${sourcePath.replace(path.join(this.sourceDirName), '')}`)
       mkdirsSync(path.dirname(copyPth)) // 未创建目录，先创建目录
       fs.copyFileSync(sourcePath, copyPth)
     }

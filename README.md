@@ -1,8 +1,8 @@
 # tinify-compress-anywhere
 
-[![NPM Version](http://img.shields.io/npm/v/tci.svg?style=flat)](https://www.npmjs.org/package/tci)
-[![NPM Downloads](https://img.shields.io/npm/dm/tci.svg?style=flat)](https://npmcharts.com/compare/tci?minimal=true)
-[![Install Size](https://packagephobia.now.sh/badge?p=tci)](https://packagephobia.now.sh/result?p=tci)
+[![NPM Version](http://img.shields.io/npm/v/tinify-compress-anywhere.svg?style=flat)](https://www.npmjs.org/package/tinify-compress-anywhere)
+[![NPM Downloads](https://img.shields.io/npm/dm/tinify-compress-anywhere.svg?style=flat)](https://npmcharts.com/compare/tinify-compress-anywhere?minimal=true)
+[![Install Size](https://packagephobia.now.sh/badge?p=tinify-compress-anywhere)](https://packagephobia.now.sh/result?p=tinify-compress-anywhere)
 
 Read this in other languages: English | [简体中文](./Readme_zh-CN.md)
 
@@ -32,8 +32,7 @@ set apiKey of what is Authentication to the API is done with HTTP Basic Auth of 
 tci setKey apiKey
 ```
 
-![setKey](./source/screenshot/1673603210950.jpg)
-
+![setKey](./source/screenshot/setKey.jpg)
 
 ## Get Count
 
@@ -43,7 +42,7 @@ Get info about how much images the API key already optimized this month.
 tci count
 ```
 
-![getCount](./source/screenshot/1673603584706.jpg)
+![getCount](./source/screenshot/getCount.jpg)
 
 ## compress images
 
@@ -79,6 +78,6 @@ before the compression, copy the origin files to copyPath
 tci -s ./source -o ./source -c ./copy
 ```
 
-![compressing](./source/screenshot/1673603740063.jpg)
+![compressing](./source/screenshot/compressing.jpg)
 
-![complete](./source/screenshot/1673603756317.jpg)
+![complete](./source/screenshot/complete.jpg)
