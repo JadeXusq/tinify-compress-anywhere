@@ -20,4 +20,3 @@ jobs:
       - run: npm run publish || true
         env: 
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-          REGISTRY: https://registry.npmjs.com/
