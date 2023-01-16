@@ -22,4 +22,3 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           REGISTRY: https://registry.npmjs.com/
           FORCE_COLOR: 2
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
