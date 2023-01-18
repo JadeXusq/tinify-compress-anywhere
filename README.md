@@ -28,6 +28,20 @@ tci -V
 
 set apiKey of what is Authentication to the API is done with HTTP Basic Auth of tinify. [fetch address](https://tinify.com/dashboard/api)
 
+Register and log in to an account through your email first
+
+![login](./source/screenshot/login.png)
+
+After logging in, click on the user name to enter the personal homepage
+
+![home](./source/screenshot/home.png)
+
+Click the API menu in the sidebar to go to Create or Copy APIKey
+
+![api](./source/screenshot/api.png)
+
+after then, set the API key to your tci plugin
+
 ```sh
 tci setKey apiKey
 ```
@@ -78,6 +92,5 @@ before the compression, copy the origin files to copyPath
 tci -s ./source -o ./source -c ./copy
 ```
 
-![compressing](./source/screenshot/compressing.jpg)
-
-![complete](./source/screenshot/complete.jpg)
+![compress](./source/screenshot/compress.gif)
+![results](./source/screenshot/results.png)

@@ -26,7 +26,21 @@ tci -V
 
 ## 设置key
 
-设置tinify提供的用于授权的apiKey. [获取地址](https://tinify.com/dashboard/api)
+[获取地址](https://tinify.com/dashboard/api)
+
+先通过邮箱注册登录一个账号
+
+![登录](./source/screenshot/login.png)
+
+登录后，点击用户名进入到个人首页
+
+![首页](./source/screenshot/home.png)
+
+点击侧边栏api菜单，进入创建或复制apiKey
+
+![api](./source/screenshot/api.png)
+
+以上就是注册获取apiKey的方法，获取到apiKey之后，通过下面的命令设置tci插件使用的apiKey
 
 ```sh
 tci setKey apiKey
@@ -80,6 +94,5 @@ tci -s ./source -o ./source -c ./copy
 
 ## 效果展示
 
-![压缩中](./source/screenshot/compressing.jpg)
-
-![压缩完成](./source/screenshot/complete.jpg)
+![压缩](./source/screenshot/compress.gif)
+![压缩效果](./source/screenshot/results.png)
