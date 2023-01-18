@@ -8,15 +8,16 @@ Read this in other languages: [English](./README.md) | 简体中文
 
 ## 简介
 
-使用Tinify插件将图像文件从指定文件夹压缩到指定文件夹
+tinify-compress-anywhere库是一个使用Tinify插件将图像文件从指定文件夹压缩到指定文件夹的第三方库，实现了多级目录接口下的图片全压缩。
+![效果截图](./source/screenshot/complete.jpg?raw=true)
 
-## 安装
+## 安装插件
 
 ```sh
 npm install tinify-compress-anywhere -g
 ```
 
-## 检查版本
+## 检查插件版本
 
 检查 `tci` 插件版本
 
@@ -66,17 +67,19 @@ tci -s ./source -o ./output
 tci -s E:\tinify-compress-anywhere\source -o E:\tinify-compress-anywhere\output
 ```
 
-要覆盖当前文件夹，传入相同路径即可
+要覆盖当前文件夹，传入相同路径即可，（ps. 可引用到自己的项目中，通过配置指令，实现打包发布前提前对图片资源进行压缩）
 
 ```sh
 tci -s ./source -o ./source
 ```
 
-指定压缩前拷贝文件输出目录
+指定压缩前拷贝文件输出目录（ps. 为了确保原图片安全性，可指定拷贝路径，该插件会在指定的拷贝路径下按时间戳存放的形式对图片进行拷贝）
 
 ```sh
 tci -s ./source -o ./source -c ./copy
 ```
+
+## 效果展示
 
 ![压缩中](./source/screenshot/compressing.jpg)
 
