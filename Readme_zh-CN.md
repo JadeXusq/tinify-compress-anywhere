@@ -8,7 +8,9 @@ Read this in other languages: [English](./README.md) | 简体中文
 
 ## 简介
 
-tinify-compress-anywhere库是一个使用Tinify插件将图像文件从指定文件夹压缩到指定文件夹的第三方库，实现了多级目录接口下的图片全压缩。
+tinify-compress-anywhere库([文档地址](https://segmentfault.com/a/1190000043344404))是一个使用Tinify插件将图像文件从指定文件夹压缩到指定文件夹的第三方库，实现了多级目录接口下的图片全压缩。
+
+
 
 ## 安装插件
 

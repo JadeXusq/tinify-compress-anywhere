@@ -8,7 +8,7 @@ Read this in other languages: English | [简体中文](./Readme_zh-CN.md)
 
 ## Introduction
 
-compress image files from anywhere to anywhere with tinify plugin
+compress image files from anywhere to anywhere with tinify plugin([document address](https://segmentfault.com/a/1190000043344404))
 
 ## Installation
 

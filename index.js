@@ -27,6 +27,7 @@ switch (userArgs[0]) {
     const apiKey = userArgs[1]
     if (!apiKey) {
       console.log('apiKey不能为空！'.red)
+      console.log(colors.yellow('获取地址：https://tinify.com/dashboard/api'))
       process.exit(1)
     }
 
