@@ -2,7 +2,7 @@
 
 const fs = require('fs')
 const path = require('path')
-const colors = require('colors')
+const chalk = require('chalk')
 const { program } = require('commander');
 const tinify = require('tinify')
 const TinifyCompress = require('./TinifyCompress')
@@ -27,13 +27,13 @@ switch (userArgs[0]) {
     const apiKey = userArgs[1]
     if (!apiKey) {
       console.log('apiKey不能为空！'.red)
-      console.log(colors.yellow('获取地址：https://tinify.com/dashboard/api'))
+      console.log(chalk.yellow('获取地址：https://tinify.com/dashboard/api'))
       process.exit(1)
     }
 
     fs.writeFile(keyFile, `module.exports = '${apiKey}'`, err => {
       if (err) return console.log(err)
-      console.log(colors.green(`apiKey已修改为：${apiKey}`))
+      console.log(chalk.green(`apiKey已修改为：${apiKey}`))
       process.exit(1)
     })
     break

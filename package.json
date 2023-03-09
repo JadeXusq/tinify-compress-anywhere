@@ -26,11 +26,11 @@
   "author": "JadeXu",
   "license": "ISC",
   "dependencies": {
+    "chalk": "4.1.0",
     "cliui": "^8.0.1",
-    "colors": "1.4.0",
     "commander": "^9.5.0",
     "dayjs": "^1.11.7",
-    "ora": "^6.1.2",
+    "ora": "4.1.1",
     "tinify": "^1.7.1"
   }
 }

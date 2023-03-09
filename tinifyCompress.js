@@ -1,6 +1,7 @@
 const fs = require('fs')
 const path = require('path')
-const colors = require('colors')
+const chalk = require('chalk')
+const ora = require('ora')
 const ui = require('cliui')({ width: 100 })
 const tinify = require('tinify')
 const dayjs = require('dayjs')
@@ -75,7 +76,7 @@ class TinifyCompress {
         // console.log(`${sourcePath} 压缩前:` + `${(originSize / 1024).toFixed(2)}kb`.green + ` 压缩后:`, `${(currentSize / 1024).toFixed(2)}kb`.green, ` 压缩比:`, `${((1 - currentSize / originSize) * 100).toFixed(2)}%`.green)
 
         resolve(makeRow(
-          colors.green(sourcePath),
+          chalk.green(sourcePath),
           `${(originSize / 1024).toFixed(2)}kb`,
           `${(currentSize / 1024).toFixed(2)}kb`,
           `${((1 - currentSize / originSize) * 100).toFixed(2)}%`
@@ -107,9 +108,8 @@ class TinifyCompress {
       throw new Error('待压缩列表为空')
     }
 
-    console.log(colors.green('\n开始压缩：', dayjs().format('YYYY-MM-DD HH:mm:ss')), '\n')
+    console.log(chalk.green('\n开始压缩：', dayjs().format('YYYY-MM-DD HH:mm:ss')), '\n')
 
-    const ora = (await import('ora')).default
     const spinner = ora('压缩中...').start()
     spinner.start()
 
@@ -118,16 +118,16 @@ class TinifyCompress {
         spinner.stop()
         ui.div(
           makeRow(
-            colors.cyan.bold(`File`),
-            colors.cyan.bold(`originSize`),
-            colors.cyan.bold(`currentSize`),
-            colors.cyan.bold(`ratio`)
+            chalk.cyan.bold(`File`),
+            chalk.cyan.bold(`originSize`),
+            chalk.cyan.bold(`currentSize`),
+            chalk.cyan.bold(`ratio`)
           ) + `\n` + rows.join(`\n`)
         )
         console.log(ui.toString() + '\n')
-        console.log('压缩完成：', dayjs().format('YYYY-MM-DD HH:mm:ss'), ` 共压缩了${colors.green(this.tinifyQueue.length)}个文件`)
+        console.log('压缩完成：', dayjs().format('YYYY-MM-DD HH:mm:ss'), ` 共压缩了${chalk.green(this.tinifyQueue.length)}个文件`)
       }).catch(err => {
-        console.log(colors.red('压缩出错：', dayjs().format('YYYY-MM-DD HH:mm:ss')))
+        console.log(chalk.red('压缩出错：', dayjs().format('YYYY-MM-DD HH:mm:ss')))
         console.log(err)
       })
   }
