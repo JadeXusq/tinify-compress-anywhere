@@ -1,1 +1,1 @@
-module.exports = 'HvBn96BtgJK1SXPb4QCYYF0CMxxHN3wv'
+module.exports = ''

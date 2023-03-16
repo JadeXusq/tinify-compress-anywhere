@@ -1,11 +1,12 @@
 {
   "name": "tinify-compress-anywhere",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "description": "tinify compress images anywhere",
   "main": "index.js",
   "scripts": {
     "clearKey": "node clearKey",
-    "publish": "npm run clearKey && npm publish --registry=https://registry.npmjs.org"
+    "prepublish": "npm run clearKey",
+    "publish": "npm publish --registry=https://registry.npmjs.org"
   },
   "bin": {
     "tci": "index.js"
