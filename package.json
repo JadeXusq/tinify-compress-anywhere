@@ -1,6 +1,6 @@
 {
   "name": "tinify-compress-anywhere",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "description": "tinify compress images anywhere",
   "main": "index.js",
   "scripts": {
