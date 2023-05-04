@@ -16,7 +16,8 @@
     "index.js",
     "key.js",
     "tinifyCompress.js",
-    "utils.js"
+    "utils.js",
+    "Readme_zh-CN.md"
   ],
   "repository": {
     "type": "git",
