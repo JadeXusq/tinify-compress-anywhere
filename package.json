@@ -1,6 +1,6 @@
 {
   "name": "tinify-compress-anywhere",
-  "version": "3.0.0",
+  "version": "1.1.1",
   "description": "tinify compress images anywhere",
   "main": "index.js",
   "scripts": {
@@ -11,6 +11,13 @@
   "bin": {
     "tci": "index.js"
   },
+  "files": [
+    "source/screenshot",
+    "index.js",
+    "key.js",
+    "tinifyCompress.js",
+    "utils.js"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/JadeXusq/tinify-compress-anywhere"
